@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Python Executor</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <a href="https://html-executor.onrender.com">Trang chạy mã html</a>
+    <h1>Python Executor</h1>
+    <form method="post">
+      <textarea
+        name="python_code"
+        rows="10"
+        cols="50"
+        placeholder="Enter your Python code here..."
+      >
+{{ python_code }}</textarea
+      ><br />
+      <button type="submit">Execute</button>
+    </form>
+    <h2>Output:</h2>
+    <div class="output">
+      <pre>{{ output }}</pre>
+    </div>
+  </body>
+</html>
